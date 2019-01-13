@@ -1,0 +1,212 @@
+/*-----------------------------------------------------------------
+[Master Stylesheet]
+
+Project: 		SPM
+Version: 		1.1
+Last change: 	10/08/2018 [Removing the graphical style of KNACSS]
+Assigned to: 	Yacine Souadda (fr)
+Primary use: 	Application
+-----------------------------------------------------------------*/
+
+/* ****************************************** */
+/* Implementation of the library Font Awesome */
+/* ****************************************** */
+
+
+/* ******************** */
+/* Fonts implementation */
+/* ******************** */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+
+body
+{
+	line-height: 1;
+}
+
+ol, ul
+{
+	list-style: none;
+}
+
+blockquote, q
+{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+	content: '';
+	content: none;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Début du Reset perso */
+
+body, body *
+{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, li, input[type="submit"]
+{
+	color:inherit;
+	text-decoration: none;
+
+	/*Changement progressif des transformations sur les liens de la page*/
+    -webkit-transition: background-color 450ms ease-in; /*transition webkit*/
+    -moz-transition: background-color 450ms ease-in; /*transition mozilla*/
+    -o-transition: background-color 450ms ease-in; /*transition opera*/
+    transition: background-color 450ms ease-in; /*syntaxe d'avenir*/
+}
+
+a, select:focus
+{
+	outline: none;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.sr-only
+{
+    font-size:0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+/* Fin du Reset perso */
+
+/*Removing the graphical style of KNACSS*/
+input[type="text"], input[type="tel"], textarea,
+input[type="email"], button[type="submit"]
+{
+	border: collapse;
+	box-shadow: none;
+	outline: none;
+}
+
+a, li
+{
+	color:inherit;
+	text-decoration: none;
+
+	/*Changement progressif des transformations sur les liens de la page*/
+    -webkit-transition: background-color 300ms ease-in; /*transition webkit*/
+    -moz-transition: background-color 300ms ease-in; /*transition mozilla*/
+    -o-transition: background-color 300ms ease-in; /*transition opera*/
+    transition: background-color 300ms ease-in; /*syntaxe d'avenir*/
+}
+
+a, select:focus
+{
+	outline: none;
+}
+
+a, address, blockquote, dl, ol, p, pre, ul
+{
+	margin: inherit;
+}
+/*Removing the graphical style of KNACSS*/
+
+/* Correction effets de bords */
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+.sidebar-toggle
+{
+	margin-left: 0;
+}
+
+/*PAGE INSCRIPTION*/
+
+.inscription_right{
+
+    min-height: 100vh;
+    text-align: center;
+    background: #000 url(assets/dist/img/student_login.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.inscription_left{
+	padding-top: 8%;
+}
+
+/*padding sur le fil*/
+
+.content-header {
+    padding: 15px 15px 15px 15px;
+}
+
+/* padding dans le formulaire de creation eleves*/
+
+.paddingStudent{
+	padding: 20px;
+}
+
+
+/* Liste des etudiants sur la page creation*/
+.liste_student{
+	overflow-y: scroll;
+    height: 600px;
+    width: 95%;
+    position: absolute;
+}
+
+
+/* Liste des etudiants sur la page creation*/
+.call-student{
+	position: absolute;
+	right: 2px;
+	top: 3px;
+}

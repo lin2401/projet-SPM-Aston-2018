@@ -1,0 +1,33 @@
+<!-- Framework used : KNACSS -->
+
+<!-- GLOBAL -->
+<div class="global">
+
+	<!-- MAIN -->
+	<main class="grid-12 login__windows">
+
+		<div class="col-6">
+		</div>
+		<div class="col-6-small-all item-center">
+			<div class="center">
+				<a href="index.php"><img src="assets/dist/img/logo_spm.png" alt="logo SPM"><span class="sr-only">SPM</span></a>
+			</div>
+			<h1>Authentification</h1>
+			<form action="" method="POST">
+				<input type="email" placeholder="Votre email" name="email" autocomplete="off" required="required">
+				<input type="password" placeholder="Votre mot de passe" name="password" autocomplete="off" required="required">
+				<input type="submit" routerLink="/student-area" value="Connexion">
+			</form>
+			<p>Mot de passe oublié ? <a routerLink="/student-area">Renvoyer</a></p>
+
+			<div class="login__frame-teacher">
+				<p>Réservé aux professeurs !</p>
+				<button routerLink="/inscription">Abonner ma classe</button>
+			</div>
+
+		</div>
+	</main>
+	<!-- END of MAIN -->
+
+</div>
+<!-- END of GLOBAL -->

@@ -1,0 +1,55 @@
+<!-- sidebar menu: : style can be found in sidebar.less -->
+<ul class="sidebar-menu" data-widget="tree">
+	<li class="header">MENU</li>
+	<li class="active">
+	    <a routerLink="/student-area">
+	    	<i class="fa fa-tachometer-alt"></i>&nbsp;&nbsp;<span>Tableau de bord</span>
+	    </a>
+	</li>
+	<li routerLinkActive="active">
+	  	<a routerLink="/profile-student">
+	    	<i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;<span>Profil</span>
+	  	</a>
+	</li>
+	<li routerLinkActive="active" class="treeview">
+	  	<a>
+	    	<i class="fa fa-envelope"></i>&nbsp;&nbsp;<span>Messagerie</span>
+    		<span class="pull-right-container">
+      			<i class="fa fa-angle-left pull-right"></i>
+    		</span>
+	  	</a>
+		<ul class="treeview-menu">
+			<li routerLinkActive="active"><a routerLink="/mail-service"><i class="fa fa-walking"></i>&nbsp;&nbsp;&nbsp;&nbsp;Consulter</a></li>
+			<li routerLinkActive="active"><a routerLink="/mail-read"><i class="fa fa-file-contract"></i>&nbsp;&nbsp;&nbsp;Ecrire</a></li>
+		</ul>
+	</li>
+	<li routerLinkActive="active">
+		<a routerLink="/cooperative">
+			<i class="fa fa-btc"></i>&nbsp;&nbsp;<span>Coopérative</span>
+		</a>
+	</li>
+	<li routerLinkActive="active">
+		<a routerLink="/directory">
+			<i class="fa fa-address-card"></i>&nbsp;&nbsp;<span>Annuaire</span>
+		</a>
+	</li>
+	<li routerLinkActive="active">
+		<a routerLink="/calendar">
+			<i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<span>Calendrier</span>
+			<span class="pull-right-container">
+				<small class="label pull-right bg-red">3</small>
+				<small class="label pull-right bg-blue">17</small>
+			</span>
+		</a>
+	</li>
+	<li routerLinkActive="active">
+		<a routerLink="/textbook">
+			<i class="fa fa-edit"></i>&nbsp;&nbsp;<span>Cahier de texte</span>
+		</a>
+	</li>
+	<li routerLinkActive="active">
+		<a routerLink="/abilities">
+			<i class="fa fa-chart-pie"></i>&nbsp;&nbsp;<span>Compétences</span>
+		</a>
+	</li>
+</ul>

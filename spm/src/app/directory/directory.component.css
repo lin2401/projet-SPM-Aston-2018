@@ -1,0 +1,14 @@
+.directory__contact-frame
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.directory__contact-label
+{
+	text-align: left;
+	font-weight: 700;
+	font-size: 3rem;
+}
